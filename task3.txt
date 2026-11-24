@@ -1,5 +1,5 @@
 Eva:
-Connected components (BFS/DFS)
+Connected components (BFS/DFS) / Clustering coefficient
 Jordi:
 Community detection
 Mahnoor:
