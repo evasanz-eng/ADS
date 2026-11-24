@@ -1,0 +1,7 @@
+Eva:
+Connected components (BFS/DFS)
+Jordi:
+Community detection
+Mahnoor:
+Degree Centrality
+Mireia:
