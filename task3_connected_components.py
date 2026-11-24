@@ -31,10 +31,47 @@ for node in G.nodes():
         components.append(component)
 
 
+#### CLUSTERING COEFFICIENT ####
 
+# Calculate local clustering coefficient for each node
+clustering = nx.clustering(G, weight=None)
 
-# other things worth studying
-#Degree distribution: Which butterfly organisms have the most connections?
-#Betweenness centrality: Which organisms act as bridges between different groups?
-#Clustering coefficient: Are organisms connected to organisms that are also connected to each other?
-#Community detection: Can you identify clusters of closely related butterfly organisms?
+# Calculate average clustering coefficient
+avg_clustering = nx.average_clustering(G, weight=None)
+
+print("Clustering coefficient statistics")
+print("----------------------------------")
+print(f"Average clustering coefficient: {avg_clustering:.4f}")
+print(f"Maximum clustering coefficient: {max(clustering.values()):.4f}")
+print(f"Minimum clustering coefficient: {min(clustering.values()):.4f}")
+
+# Sort nodes by clustering coefficient
+sorted_clustering = sorted(
+    clustering.items(),
+    key=lambda x: x[1],
+    reverse=True
+)
+
+print("\nTop 10 organisms by clustering coefficient")
+
+for node, coefficient in sorted_clustering[:10]:
+    label = G.nodes[node].get("label", node)
+    print(f"{label}: {coefficient:.4f}")
+
+#Clustering coefficient statistics
+#----------------------------------
+#Average clustering coefficient: 0.5954
+#Maximum clustering coefficient: 0.9303
+#Minimum clustering coefficient: 0.3728
+
+#Top 10 organisms by clustering coefficient
+#0.015727: 0.9303
+#0.034699: 0.9132
+#0.065361: 0.9034
+#0.436401: 0.8899
+#0.509266: 0.8820
+#0.174339: 0.8510
+#0.082452: 0.8468
+#0.300119: 0.8454
+#0.854803: 0.8390
+#0.076795: 0.8369
