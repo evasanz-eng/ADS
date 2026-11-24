@@ -8,5 +8,9 @@ Task 1: Understand the Biological Network (Joint Work)
 • The biological significance of the relationships represented in the network
 
 
-The biological problem presented by the network is the differences between buterflies. Nodes represent buterflies and edges is the visual similarities between them. This is calculated by using butterfly images from a dataset.
+The biological problem presented by the network is the differences between buterflies. 
+Nodes represent buterflies and edges is the visual similarities between them. 
+This is calculated by using butterfly images from a dataset. 
+The information is extracted from the Leeds butterfly fine-grained species image dataset. 
+Network statistics are calculated on edges with weights above the 75-th percentile.
 
