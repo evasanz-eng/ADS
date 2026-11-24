@@ -32,3 +32,30 @@ the network.
 The network has 832 nodes and  86528 edges.
 The avarage degree is 208, the maximum digree is 530 and the minimum degree 33.
 
+
+Task 3: Individual Graph Analysis (Individual Work) 
+
+Each student must independently select and apply one graph algorithm or graph metric. The selected technique should be motivated and justified by a biological question that can be investigated using the chosen method. Possible choices include, but are not limited to:
+• Shortest-path algorithms 
+• Minimum spanning trees 
+• Topological sorting 
+• Connected components  (BFS/DFS) 
+• Strongly connected components 
+• Community detection algorithms 
+• Degree centrality 
+• Betweenness centrality 
+• Closeness centrality 
+• Eigenvector centrality 
+• PageRank 
+• Link prediction methods 
+• Other algorithms available in NetworkX
+
+For the selected algorithm or metric, each student must: 
+
+1. Explain the algorithm or metric. 
+2. Describe its objective and computational characteristics. 
+3. Justify why it is relevant for the chosen biological network. 
+4. Apply it to the dataset. 
+5. Interpret the results from both a graph-theoretical and biological perspective. 
+
+The four students in a group must choose different algorithms or metrics. 
