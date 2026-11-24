@@ -14,3 +14,21 @@ This is calculated by the information extracted from the Leeds butterfly fine-gr
 Network statistics are calculated on edges with weights above the 75-th percentile.
 The graph is undirected and is weighted.
 
+Task 2: Analyze Global Graph Properties
+
+Perform an analysis of the overall structure of the network. Relevant properties may include:
+• Number of vertices and edges
+• Degree distribution
+• Network density
+• Connected components
+• Diameter
+• Average shortest-path length
+• Clustering coefficient
+• Community structure
+• Other relevant graph characteristics
+For each property analyzed, explain its biological interpretation and what it reveals about
+the network.
+
+The network has 832 nodes and  86528 edges.
+The avarage degree is 208, the maximum digree is 530 and the minimum degree 33.
+
