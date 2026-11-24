@@ -33,6 +33,16 @@ for node in G.nodes():
 
 #### CLUSTERING COEFFICIENT ####
 
+#1. The clustering coefficient measures if the neighbours a node is connected to are also connected between each other.
+#    The average clustering coefficient is calculated by averaging the local coefficients across all nodes in the network.
+#    The coefficient ranges between 0 and 1. A value of 0 indicates that none of a node's neighbours are connected to each other, whereas a value of 1 indicates that all its neighbours are interconnected.
+
+# 2. The objective of using this metric is to analyze the extent of local connectivity and determine if the network contains tightly interconnected groups.
+
+# 3. In this scenario, this represents wether some organisms of butterfly are all similar (connected) or it is less local.
+#    If the clustering coefficient is high, it shows a similar connectivity patterns between species, possibly emaning biological ressemblance.
+
+# 4.
 # Calculate local clustering coefficient for each node
 clustering = nx.clustering(G, weight=None)
 
@@ -75,3 +85,8 @@ for node, coefficient in sorted_clustering[:10]:
 #0.300119: 0.8454
 #0.854803: 0.8390
 #0.076795: 0.8369
+
+#5. Analysis of results:
+# On average, the neighbours are highly connected with each other, instead of having isolated neighbours. 
+# The range between highest and lowest clustering coefficient is relatively low, which indicated that most nodes (organisms) have the same pattern of connectivity.
+# We don't expect to find a few highly clustered organisms but rather a uniform network.  
