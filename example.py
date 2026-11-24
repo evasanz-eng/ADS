@@ -32,3 +32,14 @@ degrees = [d for _, d in G.degree()]
 print(f"Average degree: {sum(degrees)/len(degrees):.2f}")
 print(f"Maximum degree: {max(degrees)}")
 print(f"Minimum degree: {min(degrees)}")
+
+#Graph statistics
+#----------------
+#Number of nodes: 832
+#Number of edges: 86528
+#Density: 0.250301
+#Directed graph: No
+#Connected components: 1
+#Average degree: 208.00
+#Maximum degree: 530
+#Minimum degree: 33
