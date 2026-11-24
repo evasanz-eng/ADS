@@ -1,3 +1,6 @@
+# Since there is 1 connected component (all nodes can be reached) and the graph is undirected, it makes no difference wether we use 
+# breadth first search or depth first search
+
 import networkx as nx
 from example import G
 
