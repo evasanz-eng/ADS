@@ -8,7 +8,8 @@ Task 1: Understand the Biological Network (Joint Work)
 • The biological significance of the relationships represented in the network
 
 
-The biological problem presented by the network is the differences between different butterfly species from images. It is a organism-to-organism graph. There are 10 different species of butterflies in the graph. 
+The biological problem presented by the network is to visually discrimiate between butterfly species. The ntwork captures how visually similar individuals are and whether that similarity reflects species aspects. 
+It is a organism-to-organism graph. There are 10 different species of butterflies in the graph. 
 Nodes represent buterflies and edges is the visual similarities between them. 
 This is calculated by the information extracted from the Leeds butterfly fine-grained species image dataset. 
 Network statistics are calculated on edges with weights above the 75-th percentile.
@@ -30,13 +31,18 @@ For each property analyzed, explain its biological interpretation and what it re
 the network.
 
 The network has 832 nodes and  86528 edges.
-The avarage degree is 208, the maximum digree is 530 and the minimum degree 33.
 The density is 0.250301. Some species are more connected to some species than to others, because some species are more similar between each other. 
 It is not a directed graph. This makes sense as we are only looking at the correlation between species, not how one affects the others. 
 There is 1 connected component. This means that all butterfly species have similitudes between them. There is not at least one species that is separated from the rest. 
 Average degree: 208.00. Each butterfly is, in average, connected to 208 other butterflies. 
 Maximum degree: 530. At maximum, a butterly is connected to 530 other butterflies.
 Minimum degree: 33. At minimum, a butterfly is connected to 33 butterflies.
+The diameter is 4, which is the longest shortest path in the network. So any two butterflies are connected by a chain of at most 4 similarity links, so at least 3 intermediate butterflies.
+The avarage shortest path length is 1.804, most pairs are either directly connected or share a common neighbour.
+
+The avarage clustering is 0.5954 and the transitivity 0.5641. Both are more than double the 0.25 expected in a random graph of the same density.
+
+If we talk about community structure we see that the modularity is 0.4365, so since it is higher than 0.3 we could say that there is a real community structure. We have 7 communities of size 172, 170, 160, 92, 84, 83, 71 (they sum to 832, so every node is assigned). The sizes fall in two groups: three large communities of about 160 to 170 and four smaller ones of about 70 to 90. Because the Leeds dataset has about 10 species, Louvain found fewer groups than classes. An explanation could be that there are species very alike that merge.
 
 
 Task 3: Individual Graph Analysis (Individual Work) 
