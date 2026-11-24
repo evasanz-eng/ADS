@@ -6,3 +6,7 @@ Task 1: Understand the Biological Network (Joint Work)
 • Whether the graph is directed or undirected.
 • Whether the graph is weighted or unweighted.
 • The biological significance of the relationships represented in the network
+
+
+The biological problem presented by the network is the differences between buterflies. Nodes represent buterflies and edges is the visual similarities between them. This is calculated by using butterfly images from a dataset.
+
