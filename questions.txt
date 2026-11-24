@@ -8,7 +8,7 @@ Task 1: Understand the Biological Network (Joint Work)
 • The biological significance of the relationships represented in the network
 
 
-The biological problem presented by the network is the differences between different butterfly species.  It is a species-to-species graph. 
+The biological problem presented by the network is the differences between different butterfly species from images. It is a organism-to-organism graph. There are 10 different species of butterflies in the graph. 
 Nodes represent buterflies and edges is the visual similarities between them. 
 This is calculated by the information extracted from the Leeds butterfly fine-grained species image dataset. 
 Network statistics are calculated on edges with weights above the 75-th percentile.
@@ -31,6 +31,12 @@ the network.
 
 The network has 832 nodes and  86528 edges.
 The avarage degree is 208, the maximum digree is 530 and the minimum degree 33.
+The density is 0.250301. Some species are more connected to some species than to others, because some species are more similar between each other. 
+It is not a directed graph. This makes sense as we are only looking at the correlation between species, not how one affects the others. 
+There is 1 connected component. This means that all butterfly species have similitudes between them. There is not at least one species that is separated from the rest. 
+Average degree: 208.00. Each butterfly is, in average, connected to 208 other butterflies. 
+Maximum degree: 530. At maximum, a butterly is connected to 530 other butterflies.
+Minimum degree: 33. At minimum, a butterfly is connected to 33 butterflies.
 
 
 Task 3: Individual Graph Analysis (Individual Work) 
