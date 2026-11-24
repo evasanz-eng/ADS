@@ -1,1 +1,8 @@
+Task 1: Understand the Biological Network (Joint Work)
 
+• The biological problem represented by the network.
+• What the vertices represent.
+• What the edges represent.
+• Whether the graph is directed or undirected.
+• Whether the graph is weighted or unweighted.
+• The biological significance of the relationships represented in the network
