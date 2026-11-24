@@ -42,7 +42,13 @@ The avarage shortest path length is 1.804, most pairs are either directly connec
 
 The avarage clustering is 0.5954 and the transitivity 0.5641. Both are more than double the 0.25 expected in a random graph of the same density.
 
-If we talk about community structure we see that the modularity is 0.4365, so since it is higher than 0.3 we could say that there is a real community structure. We have 7 communities of size 172, 170, 160, 92, 84, 83, 71 (they sum to 832, so every node is assigned). The sizes fall in two groups: three large communities of about 160 to 170 and four smaller ones of about 70 to 90. Because the Leeds dataset has about 10 species, Louvain found fewer groups than classes. An explanation could be that there are species very alike that merge.
+If we talk about community structure we see that the modularity is 0.4365, 
+so since it is higher than 0.3 we could say that there is a real community structure. We have 7 communities of size 172, 170, 160, 92, 84, 83, 71 
+(they sum to 832, so every node is assigned). 
+The sizes fall in two groups: three large communities of about 160 to 170 and 
+four smaller ones of about 70 to 90. Because the Leeds dataset has about 10
+species, Louvain found fewer groups than classes. 
+An explanation could be that there are species very alike that merge.
 
 
 Task 3: Individual Graph Analysis (Individual Work) 
