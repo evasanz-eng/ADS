@@ -33,13 +33,40 @@ print(f"Average degree: {sum(degrees)/len(degrees):.2f}")
 print(f"Maximum degree: {max(degrees)}")
 print(f"Minimum degree: {min(degrees)}")
 
-#Graph statistics
+avg_clust = nx.average_clustering(G)                    # unweighted
+avg_clust_w = nx.average_clustering(G, weight="weight") # weighted version
+transitivity = nx.transitivity(G)                       # global clustering
+
+print(f"Average clustering coefficient: {avg_clust:.4f}")
+print(f"Weighted average clustering:    {avg_clust_w:.4f}")
+print(f"Transitivity (global):          {transitivity:.4f}")
+
+
+from networkx.algorithms.community import louvain_communities, modularity
+
+comms = louvain_communities(G, weight="weight", seed=42)
+Q = modularity(G, comms, weight="weight")
+
+print(f"Number of communities: {len(comms)}")
+print(f"Modularity: {Q:.4f}")
+print(f"Community sizes: {sorted((len(c) for c in comms), reverse=True)}")
+
+# Graph statistics
 #----------------
-#Number of nodes: 832
-#Number of edges: 86528
-#Density: 0.250301
-#Directed graph: No
-#Connected components: 1
-#Average degree: 208.00
-#Maximum degree: 530
-#Minimum degree: 33
+# Number of nodes: 832
+# Number of edges: 86528
+# Density: 0.250301
+# Directed graph: No
+# Connected components: 1
+# Average degree: 208.00
+# Maximum degree: 530
+# Minimum degree: 33
+# Diameter: 4
+# Radius: 2
+# Average shortest path length: 1.804
+# Average clustering coefficient: 0.5954
+# Weighted average clustering:    0.0240
+# Transitivity (global):          0.5641
+# Number of communities: 7
+# Modularity: 0.4365
+# Community sizes: [172, 170, 160, 92, 84, 83, 71]
