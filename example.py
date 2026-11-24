@@ -1,11 +1,15 @@
 import networkx as nx
 
 G = nx.read_edgelist(
-    "networkx.tsv",
+    "SS-Butterfly_weights.tsv",
     delimiter="\t",
     nodetype=str,
-    data=False
+    data=(("weight", float),)
 )
+
+labels = pd.read_csv("SS-Butterfly_labels.tsv", sep="\t", header=None,
+                     names=["node", "label"], dtype=str)
+nx.set_node_attributes(G, dict(zip(labels["node"], labels["label"])), "label")
 
 print("Graph statistics")
 print("----------------")
